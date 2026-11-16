@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/Gerrit-3.x-5b6b7b" alt="Gerrit 3.x">
     <img src="https://img.shields.io/badge/i18n-EN%20%7C%20KO-5b6b7b" alt="English and Korean">
     <img src="https://img.shields.io/badge/license-MIT-444" alt="MIT">
+    <a href="https://www.npmjs.com/package/gerrit-lens-bridge"><img src="https://img.shields.io/npm/v/gerrit-lens-bridge?label=bridge" alt="npm gerrit-lens-bridge"></a>
   </p>
   <p><a href="README.md">English</a> · <strong>한국어</strong></p>
 </div>
@@ -46,7 +47,7 @@ Gerrit REST API 를 직접 부르므로 중간 서버도, 따로 가입할 계�
 
 ## 설치
 
-**Chrome 웹스토어:** 심사 중
+**Chrome 웹스토어:** 심사 중. 그동안은 [Releases](https://github.com/osntak/gerrit-lens/releases/latest) 에서 `gerrit-lens-v0.1.0.zip` 을 받아 압축을 풀고, 그 폴더를 압축해제된 확장으로 로드하면 된다.
 
 **소스에서:**
 

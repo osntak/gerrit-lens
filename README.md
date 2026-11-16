@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/Gerrit-3.x-5b6b7b" alt="Gerrit 3.x">
     <img src="https://img.shields.io/badge/i18n-EN%20%7C%20KO-5b6b7b" alt="English and Korean">
     <img src="https://img.shields.io/badge/license-MIT-444" alt="MIT">
+    <a href="https://www.npmjs.com/package/gerrit-lens-bridge"><img src="https://img.shields.io/npm/v/gerrit-lens-bridge?label=bridge" alt="npm gerrit-lens-bridge"></a>
   </p>
   <p><strong>English</strong> · <a href="README.ko.md">한국어</a></p>
 </div>
@@ -46,7 +47,7 @@ Need Gerrit's own page for a moment? **Classic view** at the top right; the **LE
 
 ## Install
 
-**Chrome Web Store:** in review
+**Chrome Web Store:** in review. Meanwhile, download `gerrit-lens-v0.1.0.zip` from [Releases](https://github.com/osntak/gerrit-lens/releases/latest), unzip it and load the folder as an unpacked extension.
 
 **From source:**
 
