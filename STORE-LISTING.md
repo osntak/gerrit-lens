@@ -175,7 +175,7 @@ Shows Gerrit change pages in a more readable review screen and lets the user rev
 
 | 권한 | 정당화 (영어로 입력) |
 |---|---|
-| `storage` | Saves the user's settings in the browser: allowed Gerrit sites, on/off, theme, language, diff view and whitespace choices. Nothing is sent anywhere. |
+| `storage` | Saves the user's settings in the browser: on/off, theme, language, diff view, whitespace and file list choices. Nothing is sent anywhere. |
 | `scripting` | Registers the review screen script only on the Gerrit sites the user allowed from the popup. Removing the site removes the registration. |
 | `activeTab` | Lets the popup read the current tab's address so it can offer "Use on this site" for that Gerrit site and show whether it is enabled. |
 | Optional host permissions (`http://*/*`, `https://*/*`) | Every organization runs Gerrit on its own address, so no site can be listed in advance. Access is optional and requested only when the user clicks "Use on this site" for their Gerrit, or "Allow connection" for the local bridge at http://127.0.0.1. Nothing is granted at install time. |
@@ -214,4 +214,4 @@ Shows Gerrit change pages in a more readable review screen and lets the user rev
 
 ## 6. 같이 할 것
 
-- `gerrit-lens-bridge` npm 게시. 팝업의 `npx` 명령은 게시 뒤에야 동작한다. 스토어 공개 전에 끝낸다.
+- `gerrit-lens-bridge` npm 게시: 0.1.0 게시 완료 (2026-11-16).
