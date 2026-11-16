@@ -10,7 +10,8 @@
 |---|---|
 | 개발자 등록비 $5 | 결제 완료 (Changelink, gw-tweaks 와 같은 계정) |
 | 업로드 zip | `npm run zip` -> `gerrit-lens-v<버전>.zip` (manifest.json 이 zip 루트에 있음) |
-| 아이콘 128×128 | `icons/icon128.png`, 패키지에 포함되어 자동 인식 |
+| 아이콘 128×128 (패키지) | `icons/icon128.png`, zip 에 포함 |
+| 스토어 아이콘 128×128 | `store-assets/upload/store-icon-128.png` (가이드대로 96×96 그림 + 16px 투명 여백) |
 | 스크린샷 1280×800 | `store-assets/upload/screenshot-*.jpg` (한국어 `-ko`, 영어 5장씩) |
 | 작은 프로모션 타일 440×280 | `store-assets/upload/promo-small-440x280.jpg` |
 | 마키 프로모션 타일 1400×560 | `store-assets/upload/promo-marquee-1400x560.jpg` |
