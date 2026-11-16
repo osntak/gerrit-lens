@@ -51,7 +51,7 @@ Gerrit REST API 를 직접 부르므로 중간 서버도, 따로 가입할 계�
 **소스에서:**
 
 ```bash
-git clone <이 저장소>
+git clone https://github.com/osntak/gerrit-lens.git
 cd gerrit-lens
 npm run zip          # gerrit-lens-v<버전>.zip
 ```

@@ -20,5 +20,11 @@
     "code-review",
     "claude",
     "codex"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osntak/gerrit-lens.git",
+    "directory": "bridge"
+  },
+  "homepage": "https://github.com/osntak/gerrit-lens#readme"
 }

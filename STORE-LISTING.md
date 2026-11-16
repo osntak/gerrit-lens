@@ -14,7 +14,7 @@
 | 스크린샷 1280×800 | `store-assets/upload/screenshot-*.jpg` (한국어 `-ko`, 영어 5장씩) |
 | 작은 프로모션 타일 440×280 | `store-assets/upload/promo-small-440x280.jpg` |
 | 마키 프로모션 타일 1400×560 | `store-assets/upload/promo-marquee-1400x560.jpg` |
-| 개인정보처리방침 URL | `PRIVACY.md` 를 공개 저장소에 올린 뒤 그 주소 |
+| 개인정보처리방침 URL | https://github.com/osntak/gerrit-lens/blob/main/PRIVACY.md |
 
 ### 등록정보에 회사명, 사내 주소를 넣지 않는다
 
@@ -190,7 +190,9 @@ Shows Gerrit change pages in a more readable review screen and lets the user rev
   - 제3자에게 데이터를 판매하지 않는다
   - 신용도 판단이나 대출 목적으로 사용하지 않는다
 
-**개인정보처리방침 URL**: 로그인 세션으로 사이트 콘텐츠를 다루므로 넣는다. `PRIVACY.md` 를 공개 저장소에 올린 주소.
+**개인정보처리방침 URL**: 로그인 세션으로 사이트 콘텐츠를 다루므로 넣는다. https://github.com/osntak/gerrit-lens/blob/main/PRIVACY.md
+
+**홈페이지 URL** (선택): https://github.com/osntak/gerrit-lens
 
 ## 4. 배포 탭
 

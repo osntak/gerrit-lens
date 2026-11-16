@@ -51,7 +51,7 @@ Need Gerrit's own page for a moment? **Classic view** at the top right; the **LE
 **From source:**
 
 ```bash
-git clone <this repository>
+git clone https://github.com/osntak/gerrit-lens.git
 cd gerrit-lens
 npm run zip          # gerrit-lens-v<version>.zip
 ```
