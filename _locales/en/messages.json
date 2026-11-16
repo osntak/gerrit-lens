@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Gerrit Lens" },
+  "extDesc": { "message": "Unofficial. A cleaner, GitHub-style review screen for Gerrit change pages, with optional AI review notes from a local bridge." }
+}

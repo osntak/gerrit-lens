@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>promo</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; overflow: hidden; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; color: #fff;
+    background: radial-gradient(120% 140% at 100% 100%, #5a32a8 0%, #2a1a52 45%, #140f26 100%); }
+  .wrap { position: relative; width: 100vw; height: 100vh; display: flex; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 28px; }
+  .brand img { width: var(--icon); height: var(--icon); border-radius: 22%; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+  .name { font-weight: 800; font-size: var(--name); letter-spacing: -.02em; }
+  .tag { font-size: var(--tag); line-height: 1.45; color: #ddd6f3; margin-top: 22px; max-width: var(--tagw); }
+  .chips { display: flex; gap: 10px; margin-top: 26px; flex-wrap: wrap; }
+  .chips span { font-size: 18px; font-weight: 600; padding: 7px 16px; border-radius: 20px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); }
+  .shot { position: absolute; border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12); background: #fff; }
+  .shot img { display: block; }
+  /* small 440x280 */
+  .small .wrap { flex-direction: column; justify-content: center; text-align: center; }
+  .small .brand { flex-direction: column; gap: 14px; }
+</style></head>
+<body>
+<script>
+const size = new URLSearchParams(location.search).get('size') || 'marquee';
+document.body.className = size;
+const icon = '/icons/icon512.png';
+const shot = (w, h, sx, sy, sw) => `<div class="shot" style="width:${w}px;height:${h}px;right:${size === 'social' ? 60 : 70}px;top:50%;transform:translateY(-50%)"><img src="/store-assets/screenshot-ai.png" style="width:${1280 * w / sw}px;margin-left:${-sx * w / sw}px;margin-top:${-sy * w / sw}px"></div>`;
+if (size === 'small') {
+  document.body.style.cssText += ';width:440px;height:280px;--icon:84px;--name:40px;--tag:17px;--tagw:340px';
+  document.body.innerHTML = `<div class="wrap"><div class="brand"><img src="${icon}"><div class="name">Gerrit Lens</div></div><div class="tag" style="margin-top:10px">A GitHub-style review screen<br>for Gerrit</div></div>`;
+} else {
+  const W = size === 'social' ? 1280 : 1400;
+  const H = size === 'social' ? 640 : 560;
+  document.body.style.cssText += `;width:${W}px;height:${H}px;--icon:${size === 'social' ? 110 : 104}px;--name:${size === 'social' ? 76 : 72}px;--tag:27px;--tagw:${size === 'social' ? 560 : 640}px`;
+  document.body.innerHTML = `<div class="wrap" style="padding-left:${size === 'social' ? 70 : 96}px">
+    <div><div class="brand"><img src="${icon}"><div class="name">Gerrit Lens</div></div>
+    <div class="tag">A GitHub-style review screen for Gerrit. AI review notes from Claude Code or Codex land next to the lines.</div>
+    <div class="chips"><span>Split diff</span><span>Syntax colors</span><span>AI notes</span><span>EN / KO</span></div></div>
+    ${shot(size === 'social' ? 520 : 560, size === 'social' ? 440 : 400, 336, 150, 920)}</div>`;
+}
+</script>
+</body></html>

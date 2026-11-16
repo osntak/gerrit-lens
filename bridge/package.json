@@ -1,0 +1,24 @@
+{
+  "name": "gerrit-lens-bridge",
+  "version": "0.1.0",
+  "description": "Local MCP + HTTP bridge that lets Claude Code / Codex attach review notes to Gerrit changes shown by the Gerrit Lens extension",
+  "license": "MIT",
+  "bin": {
+    "gerrit-lens-bridge": "server.js"
+  },
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "gerrit",
+    "mcp",
+    "code-review",
+    "claude",
+    "codex"
+  ]
+}

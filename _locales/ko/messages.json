@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Gerrit Lens" },
+  "extDesc": { "message": "비공식 확장. Gerrit change 페이지를 GitHub 처럼 읽기 쉬운 리뷰 화면으로 바꿔 보여준다. 로컬 브리지를 켜면 AI 리뷰 의견도 줄 옆에 표시한다." }
+}
