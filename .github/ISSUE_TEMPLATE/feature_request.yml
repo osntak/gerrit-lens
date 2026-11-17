@@ -1,0 +1,25 @@
+name: Feature request / 기능 제안
+description: Something Gerrit Lens should do / Gerrit Lens 에 있으면 좋을 것
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you want to do? / 무엇을 하고 싶나요?
+      description: The task, not the solution. 해결책보다 하려는 일을 적어 주세요.
+    validations:
+      required: true
+  - type: dropdown
+    id: classic
+    attributes:
+      label: Does Gerrit's classic page have it? / Gerrit 클래식 화면에는 있나요?
+      options:
+        - "Yes, it is missing in Lens / 예, Lens 에만 없어요"
+        - "No, it is new / 아니요, 새 기능이에요"
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else / 그 밖에
+      description: How GitHub or other tools handle it, sketches, links. GitHub 등 다른 도구의 방식, 그림, 링크.

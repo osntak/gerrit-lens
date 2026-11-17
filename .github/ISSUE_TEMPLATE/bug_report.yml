@@ -1,0 +1,51 @@
+name: Bug report / 버그 신고
+description: Something in Gerrit Lens does not work / Gerrit Lens 에서 안 되는 것
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not paste real code, names or addresses from a private Gerrit. 사내 Gerrit 의 실제 코드, 이름, 주소는 가려 주세요.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / 무슨 일이 있었나요
+      description: What you did, what you expected, what you saw. 한 일, 기대한 것, 실제로 본 것.
+    validations:
+      required: true
+  - type: input
+    id: gerrit
+    attributes:
+      label: Gerrit version / Gerrit 버전
+      description: Shown at the bottom of Gerrit pages. Gerrit 페이지 맨 아래에 나와요.
+      placeholder: "3.8.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: path
+    attributes:
+      label: Where Gerrit runs / Gerrit 주소
+      options:
+        - At the host root (https://gerrit.example.com) / 주소 루트
+        - Under a path (https://example.com/r/) / 하위 경로
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Gerrit Lens and Chrome versions / Gerrit Lens, Chrome 버전
+      placeholder: "Gerrit Lens 0.1.0, Chrome 131"
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Is it about AI notes? / AI 의견 관련인가요?
+      options:
+        - "No / 아니요"
+        - "Yes, with Claude Code / 예, Claude Code"
+        - "Yes, with Codex / 예, Codex"
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors / 콘솔 에러
+      description: From DevTools > Console on the Gerrit tab, if any. Gerrit 탭 개발자 도구 콘솔에 에러가 있으면.
+      render: text

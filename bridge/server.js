@@ -176,7 +176,7 @@ function startMcp() {
         result = {
           protocolVersion: params?.protocolVersion || '2025-06-18',
           capabilities: { tools: {} },
-          serverInfo: { name: 'gerrit-lens', version: '0.1.0' },
+          serverInfo: { name: 'gerrit-lens', version: '0.1.1' },
           instructions: 'When you review a Gerrit change (for example from a gerrit.example.com/c/<project>/+/<number> link), send your findings with add_review_notes instead of only writing them in chat. One note per finding, anchored to the new-side line with its exact lineText, and a gerritText written as the comment the user would post. The user sees them inline in the Gerrit Lens extension and decides what to post.',
         };
       } else if (method === 'ping') {
@@ -237,7 +237,7 @@ function startHttp() {
     const m = /^\/annotations\/(\d+)(?:\/([\w-]+))?$/.exec(req.url);
     try {
       if (req.method === 'GET' && req.url === '/health') {
-        res.end(JSON.stringify({ ok: true, version: '0.1.0' }));
+        res.end(JSON.stringify({ ok: true, version: '0.1.1' }));
       } else if (req.method === 'GET' && m && !m[2]) {
         res.end(JSON.stringify({ change: Number(m[1]), notes: readNotes(m[1]) }));
       } else if (req.method === 'PATCH' && m && m[2]) {

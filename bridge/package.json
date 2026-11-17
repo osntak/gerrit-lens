@@ -1,8 +1,31 @@
 {
   "name": "gerrit-lens-bridge",
-  "version": "0.1.0",
-  "description": "Local MCP + HTTP bridge that lets Claude Code / Codex attach review notes to Gerrit changes shown by the Gerrit Lens extension",
+  "version": "0.1.1",
+  "description": "Local MCP + HTTP bridge that shows Claude Code / Codex review notes next to the diff lines of Gerrit changes in the Gerrit Lens Chrome extension",
+  "keywords": [
+    "gerrit",
+    "gerrit-lens",
+    "code-review",
+    "ai-code-review",
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "claude",
+    "claude-code",
+    "codex",
+    "chrome-extension"
+  ],
+  "homepage": "https://github.com/osntak/gerrit-lens#readme",
+  "bugs": {
+    "url": "https://github.com/osntak/gerrit-lens/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osntak/gerrit-lens.git",
+    "directory": "bridge"
+  },
   "license": "MIT",
+  "author": "osntak <osntak@gmail.com>",
   "bin": {
     "gerrit-lens-bridge": "server.js"
   },
@@ -13,18 +36,5 @@
   ],
   "engines": {
     "node": ">=18"
-  },
-  "keywords": [
-    "gerrit",
-    "mcp",
-    "code-review",
-    "claude",
-    "codex"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/osntak/gerrit-lens.git",
-    "directory": "bridge"
-  },
-  "homepage": "https://github.com/osntak/gerrit-lens#readme"
+  }
 }
